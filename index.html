@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobail Recharge offer</title>
+    <link rel="icon" href="favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        <div class="logo"><img src="logo img 1.png" alt="img 1"></div>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+    </div>
+
+    <!-- Offer Section -->
+    <div class="offer-section">
+        <img src="hero img 2.png" alt="img 2">
+        <p class="offer-timer">Special Offer Ends In: <span class="timer">14:59</span></p>
+    </div>
+
+    <!-- Recharge Form Section -->
+    <div class="recharge-section">
+        <img src="img 3.png" alt="img 3">
+        
+        <form id="rechargeForm">
+            <label>Select Network Provider</label>
+            <div class="network-options">
+                <label class="network-box">
+                    <input type="radio" name="network" value="Jio">
+                    Jio
+                </label>
+                <label class="network-box">
+                    <input type="radio" name="network" value="Airtel">
+                    Airtel
+                </label>
+                <label class="network-box">
+                    <input type="radio" name="network" value="VI">
+                    VI
+                </label>
+                <label class="network-box">
+                    <input type="radio" name="network" value="Bsnl">
+                    Bsnl
+                </label>
+            </div>
+
+            <label>Mobile Number</label>
+            <input type="text" id="mobileNumber" maxlength="10" placeholder="+91 xxxxx xxxxx" required>
+
+            <button type="button" onclick="validateAndRedirect()">Recharge</button>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="footer img 4.webp" alt="Footer Image">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
